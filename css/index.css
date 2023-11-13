@@ -1,9 +1,25 @@
+@import 'header.css';
+
+:root {
+  --h-header: 60px;
+
+  --primary-color: #fff;
+  --second-color: #6a1b9a;
+  --third-color: #222;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  
+body {
+  background-color: var(--bg-primary-color);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2%;
 }
