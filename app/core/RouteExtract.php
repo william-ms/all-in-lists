@@ -11,6 +11,11 @@ class RouteExtract
   {
     $routes = Routes::get_routes();
 
+    if(empty($routes))
+    {
+      throw new Exception("Route {$uri} not found");
+    }
+
     $route = self::static_route($uri, $routes);
 
     if(empty($route))

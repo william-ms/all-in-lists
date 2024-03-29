@@ -1,7 +1,6 @@
 <?=$this->extends('site.main') ?>
 
 <div class="home">
-
   <main>
     <?=$this->partial('site.search'); ?>
   </main>

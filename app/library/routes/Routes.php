@@ -13,8 +13,10 @@ class Routes
 
   public static function get_routes()
   {
-    $requestMethod = $_SERVER['REQUEST_METHOD'];
+    $requestMethod = strtolower($_SERVER['REQUEST_METHOD']);
 
-    return self::$routes[strtolower($requestMethod)];
+    return (isset(self::$routes[$requestMethod]))
+    ? self::$routes[$requestMethod]
+    : [];
   }
 }

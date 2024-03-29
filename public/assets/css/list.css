@@ -66,6 +66,7 @@
 }
 
 .list_body-text {
+  width: calc(100% - 220px);
   padding-left: 8px;
 }
 
