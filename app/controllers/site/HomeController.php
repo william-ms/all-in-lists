@@ -9,7 +9,7 @@ class HomeController extends Controller
   public function index(array $args)
   {
     return view('site.home', [
-      'title' => 'Home'
+      'title' => 'Home',
     ]);
   }
 }

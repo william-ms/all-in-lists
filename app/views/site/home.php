@@ -1,5 +1,12 @@
 <?=$this->extends('site.main') ?>
 
 <div class="home">
-  <h2>Site Home</h2>
+
+  <main>
+    <?=$this->partial('site.search'); ?>
+  </main>
+
+  <section class="list">
+    <?=$this->partial('site.list'); ?>
+  </section>
 </div>
